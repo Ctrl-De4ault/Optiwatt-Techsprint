@@ -1,0 +1,7 @@
+{
+  "name": "OptiWatt - Smart Energy Manager",
+  "description": "A modern AI-powered energy management dashboard to monitor, analyze, and optimize electricity consumption with real-time insights and personalized savings recommendations.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
