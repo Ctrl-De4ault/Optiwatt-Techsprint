@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Suggestion, Appliance } from '../types';
-import { getEnergyInsights } from '../services/gemini';
+import { getEnergyInsights } from '../services/claude';
 
 interface AISuggestionsProps {
   suggestions: Suggestion[];
@@ -43,7 +43,7 @@ const AISuggestions: React.FC<AISuggestionsProps> = ({ suggestions: initialSugge
           </div>
           <div>
             <h2 className={`text-3xl font-black ${darkMode ? 'text-white' : 'text-black'}`}>AI Recommendations</h2>
-            <p className={darkMode ? 'text-gray-500' : 'text-gray-500'}>Powered by Gemini for your specific lifestyle.</p>
+            <p className={darkMode ? 'text-gray-500' : 'text-gray-500'}>Powered by Claude Opus 4.5 for your specific lifestyle.</p>
           </div>
         </div>
         <button

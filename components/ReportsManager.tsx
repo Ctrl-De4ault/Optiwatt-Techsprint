@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Appliance } from '../types';
-import { generateFullReport } from '../services/gemini';
+import { generateFullReport } from '../services/claude';
 
 interface ReportsManagerProps {
   appliances: Appliance[];
@@ -91,7 +91,7 @@ const ReportsManager: React.FC<ReportsManagerProps> = ({ appliances, darkMode })
             </div>
             <div>
               <h3 className={`text-2xl font-black ${darkMode ? 'text-white' : 'text-black'}`}>AI Generation</h3>
-              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Instant Insights • Powered by Gemini</p>
+              <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Instant Insights • Powered by Claude Opus 4.5</p>
             </div>
           </div>
           <p className={`text-sm leading-relaxed mb-4 ${darkMode ? 'text-gray-400' : 'text-gray-500'}`}>
